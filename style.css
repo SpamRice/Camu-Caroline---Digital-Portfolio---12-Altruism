@@ -1,13 +1,9 @@
-/* ==================================================
-   GOOGLE FONTS
-================================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Berkshire+Swash&family=Caveat:wght@400..700&family=Lilita+One&family=Lobster&family=Nanum+Pen+Script&family=Share+Tech&display=swap');
 
 
-/* ==================================================
+/* ==========================================
    COLORS
-================================================== */
+========================================== */
 
 :root {
     --pink: #e9a9b5;
@@ -18,9 +14,9 @@
 }
 
 
-/* ==================================================
+/* ==========================================
    RESET
-================================================== */
+========================================== */
 
 * {
     box-sizing: border-box;
@@ -36,32 +32,38 @@ html {
 
 body {
     min-height: 100vh;
+
     background: var(--pink);
+
     color: var(--brown);
+
     font-family: 'Arimo', sans-serif;
 }
 
 
-/* ==================================================
+/* ==========================================
    HEADER
-================================================== */
+========================================== */
 
 .topbar {
     width: 100%;
     height: 155px;
 
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr;
 
     border-bottom: 8px solid var(--brown);
 
     position: relative;
+
     z-index: 10;
 }
 
 
 .nav-item {
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -70,12 +72,15 @@ body {
     padding: 0 20px;
 
     background: var(--pink);
+
     color: var(--brown);
 
     text-decoration: none;
 
     font-family: 'Caveat', cursive;
-    font-size: 58px;
+
+    font-size: 55px;
+
     line-height: 1;
 
     border-right: 7px solid var(--brown);
@@ -96,9 +101,9 @@ body {
 }
 
 
-/* ==================================================
+/* ==========================================
    ACTIVE HEADER
-================================================== */
+========================================== */
 
 .nav-item.active {
     background: var(--white);
@@ -108,13 +113,14 @@ body {
     margin-bottom: -8px;
 
     position: relative;
+
     z-index: 20;
 }
 
 
-/* ==================================================
-   PAGE
-================================================== */
+/* ==========================================
+   MAIN PAGE
+========================================== */
 
 .section-page {
     background: var(--pink);
@@ -123,6 +129,7 @@ body {
 
 .page-content {
     width: 100%;
+
     min-height: calc(100vh - 155px);
 
     background: var(--white);
@@ -130,18 +137,20 @@ body {
     padding: 75px 9% 100px;
 
     position: relative;
+
     z-index: 5;
 }
 
 
-/* ==================================================
-   PROFILE LAYOUT
-================================================== */
+/* ==========================================
+   PROFILE
+========================================== */
 
 .profile-layout {
     width: 100%;
 
     display: flex;
+
     align-items: center;
 
     gap: 100px;
@@ -149,11 +158,6 @@ body {
     padding: 35px 0 70px;
 }
 
-
-/* ==================================================
-   PROFILE PICTURE
-   Circle stays the same size
-================================================== */
 
 .profile-picture {
     width: 340px;
@@ -168,15 +172,12 @@ body {
     overflow: hidden;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 }
 
-
-/* ==================================================
-   PROFILE IMAGE
-   Zoomed inside the circle
-================================================== */
 
 .profile-picture img {
     width: 125%;
@@ -187,14 +188,8 @@ body {
     object-fit: cover;
 
     display: block;
-
-    flex-shrink: 0;
 }
 
-
-/* ==================================================
-   PROFILE INFORMATION
-================================================== */
 
 .profile-info {
     flex: 1;
@@ -212,10 +207,6 @@ body {
 }
 
 
-/* ==================================================
-   INFORMATION ITEMS
-================================================== */
-
 .info-item {
     margin-bottom: 27px;
 }
@@ -227,8 +218,6 @@ body {
     font-family: 'Lilita One', sans-serif;
 
     font-size: 27px;
-
-    letter-spacing: 0.5px;
 
     margin-bottom: 7px;
 }
@@ -248,9 +237,9 @@ body {
 }
 
 
-/* ==================================================
+/* ==========================================
    SCHOOL BACKGROUND
-================================================== */
+========================================== */
 
 .school-section {
     width: 100%;
@@ -303,9 +292,9 @@ body {
 }
 
 
-/* ==================================================
-   DUCK DECORATION
-================================================== */
+/* ==========================================
+   DUCK
+========================================== */
 
 .duck-decoration {
     width: 100%;
@@ -331,9 +320,9 @@ body {
 }
 
 
-/* ==================================================
+/* ==========================================
    DIGITAL TASKS
-================================================== */
+========================================== */
 
 .tasks-section {
     width: 100%;
@@ -352,10 +341,6 @@ body {
     margin-bottom: 55px;
 }
 
-
-/* ==================================================
-   DIGITAL TASK CARD
-================================================== */
 
 .digital-task-card {
     width: 100%;
@@ -396,6 +381,7 @@ body {
     display: block;
 
     width: 100%;
+
     height: auto;
 
     border-radius: 20px;
@@ -419,9 +405,9 @@ body {
 }
 
 
-/* ==================================================
+/* ==========================================
    SELF-ASSESSMENT
-================================================== */
+========================================== */
 
 .assessment-section {
     width: 100%;
@@ -443,10 +429,6 @@ body {
 }
 
 
-/* ==================================================
-   ASSESSMENT TITLE
-================================================== */
-
 .assessment-card h1 {
     font-family: 'Caveat', cursive;
 
@@ -460,9 +442,18 @@ body {
 }
 
 
-/* ==================================================
-   ASSESSMENT LINES
-================================================== */
+.assessment-card h2 {
+    font-family: 'Caveat', cursive;
+
+    font-size: 52px;
+
+    font-weight: 600;
+
+    color: var(--brown);
+
+    margin: 30px 0;
+}
+
 
 .assessment-line {
     width: 95%;
@@ -478,10 +469,6 @@ body {
     transform: rotate(-1deg);
 }
 
-
-/* ==================================================
-   ASSESSMENT ANSWER
-================================================== */
 
 .assessment-answer {
     font-family: 'Caveat', cursive;
@@ -500,9 +487,9 @@ body {
 }
 
 
-/* ==================================================
+/* ==========================================
    TABLET
-================================================== */
+========================================== */
 
 @media (max-width: 900px) {
 
@@ -512,7 +499,8 @@ body {
 
 
     .nav-item {
-        font-size: 43px;
+        font-size: 40px;
+
         padding: 0 12px;
     }
 
@@ -524,8 +512,6 @@ body {
     }
 
 
-    /* PROFILE */
-
     .profile-layout {
         flex-direction: column;
 
@@ -535,49 +521,16 @@ body {
     }
 
 
-    .profile-picture {
-        width: 340px;
-        height: 340px;
-    }
-
-
-    .profile-picture img {
-        width: 125%;
-        height: 125%;
-    }
-
-
     .profile-info h1,
     .tasks-section h1 {
         font-size: 60px;
     }
 
 
-    .info-label {
-        font-size: 25px;
-    }
-
-
-    .info-item p {
-        font-size: 23px;
-    }
-
-
-    /* SCHOOL */
-
     .school-item {
         grid-template-columns: 220px 1fr;
     }
 
-
-    /* DIGITAL TASK */
-
-    .digital-task-card {
-        max-width: 800px;
-    }
-
-
-    /* SELF-ASSESSMENT */
 
     .assessment-card {
         padding: 40px;
@@ -594,8 +547,6 @@ body {
     }
 
 
-    /* DUCK */
-
     .duck-decoration img {
         width: 180px;
     }
@@ -603,13 +554,11 @@ body {
 }
 
 
-/* ==================================================
+/* ==========================================
    PHONE
-================================================== */
+========================================== */
 
 @media (max-width: 600px) {
-
-    /* HEADER */
 
     .topbar {
         height: 100px;
@@ -617,7 +566,7 @@ body {
 
 
     .nav-item {
-        font-size: 27px;
+        font-size: 25px;
 
         padding: 0 7px;
 
@@ -625,21 +574,12 @@ body {
     }
 
 
-    .nav-item.active {
-        border-bottom-width: 6px;
-    }
-
-
-    /* PAGE */
-
     .page-content {
         min-height: calc(100vh - 100px);
 
         padding: 45px 7% 70px;
     }
 
-
-    /* PROFILE */
 
     .profile-layout {
         gap: 35px;
@@ -651,12 +591,6 @@ body {
     .profile-picture {
         width: 280px;
         height: 280px;
-    }
-
-
-    .profile-picture img {
-        width: 125%;
-        height: 125%;
     }
 
 
@@ -675,8 +609,6 @@ body {
         font-size: 20px;
     }
 
-
-    /* SCHOOL */
 
     .school-section h2 {
         font-size: 43px;
@@ -697,35 +629,10 @@ body {
     }
 
 
-    /* DIGITAL TASK */
-
-    .digital-task-card {
-        max-width: 100%;
-    }
-
-
-    .digital-task-link {
-        border-radius: 18px;
-    }
-
-
-    .digital-task-image {
-        border-radius: 18px;
-
-        border-width: 4px;
-    }
-
-
     .digital-task-card h2 {
         font-size: 21px;
-
-        line-height: 1.35;
-
-        margin-top: 22px;
     }
 
-
-    /* SELF-ASSESSMENT */
 
     .assessment-card {
         padding: 30px 25px 35px;
@@ -737,19 +644,17 @@ body {
     }
 
 
+    .assessment-card h2 {
+        font-size: 40px;
+    }
+
+
     .assessment-answer {
         font-size: 25px;
 
         line-height: 1.4;
     }
 
-
-    .assessment-line {
-        width: 90%;
-    }
-
-
-    /* DUCK */
 
     .duck-decoration {
         justify-content: center;
